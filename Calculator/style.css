@@ -18,7 +18,8 @@ html {
 }
 .calculator {
    width: 500px;
-   height: 700px;
+   height: 510px;
+   border-radius: 10px;
    background-color: rgb(68, 67, 67);
    display: flex;
    flex-direction: column;
@@ -35,7 +36,25 @@ html {
    text-align: right;
 }
 .calculator-bottons-body {
-   background-color: antiquewhite;
    width: 90%;
    margin: 30px auto;
+   display: grid;
+   grid-template-columns: repeat(4, 22%);
+   /* grid-template-rows: repeat(4, 60%); */
+   grid-gap: 18px 18px;
+}
+.calculator-bottons-body .btn {
+   padding: 20px;
+   font-size: 15px;
+   font-weight: 600;
+   border-radius: 10px;
+   text-align: center;
+   background-color: antiquewhite;
+}
+.calculator-bottons-body .btn:hover {
+   cursor: pointer;
+   background-color: rgb(241, 214, 178);
+}
+button {
+   border: none;
 }
