@@ -3,10 +3,21 @@ const display = document.querySelector('.calculator-display');
 
 let firstNumber = 0;
 let secondNumber = 0;
+let operator = ''
 
 container.addEventListener('click', (e) => {
   firstNumber = e.target.textContent
-  console.log(firstNumber = 'add')
+  display.textContent += firstNumber
+  console.log(operator, 'first')
+
+
+  if (firstNumber == '+') {
+    firstNumber.textContent = ''
+    display.textContent = operator
+    secondNumber = e.target.textContent
+   
+
+  }
   
 })
 
