@@ -118,12 +118,12 @@ input[type='text'], input[type='number'] {
    margin: 10px 0;
 }
 
-.list li.plu {
-   border-right: 5px solid #c0382b;
+.list li.plus {
+   border-right: 5px solid #3dcc71;
 }
 
 .list li.minus {
-   border-right: 5px solid #3dcc71;
+   border-right: 5px solid #c0382b;
 }
 
 .delete-btn {
